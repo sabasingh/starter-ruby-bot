@@ -1,7 +1,7 @@
-name: Beepboop Starterbot
-description: A simple Ruby bot starter for Beep Boop
-avatar: resources/avatar.png
-#background: resources/background.png
+name: Rosie Jetson
+description: A better onboarding experience for Slack
+avatar: resources/epicslackbot.jpg
+background: resources/background_image.jpg
 #config:
 #  - name: OPTION
 #    friendly_name: Some Unnecessary Option
