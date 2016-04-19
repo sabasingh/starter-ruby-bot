@@ -16,7 +16,8 @@ client = Slack::RealTime::Client.new
 
 # listen for hello (connection) event - https://api.slack.com/events/hello
 client.on :hello do
-  logger.debug("Connected '#{client.self['name']}' to '#{client.team['name']}' team at https://#{client.team['domain']}.slack.com.")
+    client.message channel: data['channel'], text: "Hello <@#{data['user']}>."
+    logger.debug("Connected '#{client.self['name']}' to '#{client.team['name']}' team at https://#{client.team['domain']}.slack.com.")
 end
 
 # listen for channel_joined event - https://api.slack.com/events/channel_joined
